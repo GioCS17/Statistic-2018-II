@@ -6,7 +6,7 @@ output: html_notebook
 ```{r}
 
 #Descargar
-#juan estuvo aqui
+#juan estuvo aqui mas tiempo
 install.packages("dplyr",dependencies = T)
 library("dplyr")
 
