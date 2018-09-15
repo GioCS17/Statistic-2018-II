@@ -10,10 +10,19 @@ output: html_notebook
 install.packages("dplyr",dependencies = T)
 library("dplyr")
 
+dat<-read.csv("data.csv",fileEncoding = "utf8")
+data_dengue<-read.csv("Data_dengue.csv",fileEncoding = "utf8")
+data_dengue
+
 a<-dat %>%
   group_by(anio) %>% 
-  summarise(confirmados=sum(confirmados,na.rm = T),probables=sum(probables, na.rm = T))
+  summarise(confirmados=sum(Casos.confirmados,na.rm = T),probables=sum(Casos.probables,na.rm=T))
 a
+
+b<-data_dengue %>%
+  group_by(Departamentos) %>%
+  summarise(confirmados=sum(Casos.confirmados,na.rm = T),probables=sum(Casos.probables,na.rm = T))
+b
 
 #plot(dat$age,dat$Result_of_Treatment)
 
