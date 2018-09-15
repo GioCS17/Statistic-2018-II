@@ -1,7 +1,17 @@
 ---
-title: "R Notebook"
+title: "Statistic Project UTEC 2018-II"
 output: html_notebook
 ---
+Control de enfermedades
+
+Integrantes:
+- Alvitez Falcon, Giordano Mitchell
+- Vargas Castillo, Juan Andres
+
+Profesor:
+Renom Andara, Jose Miguel
+
+**Primera Entrega**
 
 ```{r}
 
@@ -14,6 +24,5 @@ a<-dat %>%
   summarise(confirmados=sum(confirmados,na.rm = T),probables=sum(probables, na.rm = T))
 a
 
-#plot(dat$age,dat$Result_of_Treatment)
 
 ```
