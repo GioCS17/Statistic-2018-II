@@ -1,0 +1,41 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+#Instalar el paquete readxl antes de usar el comando read_excel
+#install.packages("readxl")
+#library("readxl")
+#dat<-read_excel("Horarios.xls",sheet = "Sheet1")
+#str(dat)
+getwd()
+
+dat<-read.csv("Data/3GraficoxSE_crosstab.csv",fileEncoding = "utf8")
+dat
+
+#Descargar
+install.packages("dplyr",dependencies = T)
+library("dplyr")
+
+plot(dat$semana,dat$confirmados,col=dat$anio)
+?summarise
+head(dat)
+summarise(dat)
+table(dat$anio,dat$confirmados)
+table(datanchoveta$Año,datanchoveta$Estacion)
+table(dat$anio,dat$semana,dat$confirmados)
+getwd()
+dateprueba<-read.csv(file = "Data/anchoveta.csv")
+dateprueba
+table(dateprueba$Año,dateprueba$Estacion)
+dat
+
+a<-dat %>%
+  group_by(anio) %>% 
+  summarise(confirmados=sum(confirmados,na.rm = T),probables=sum(probables, na.rm = T))
+a
+
+#plot(dat$age,dat$Result_of_Treatment)
+
+```
