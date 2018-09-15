@@ -178,23 +178,16 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG4jRGVzY2FyZ2FyXG5pbnN0YWxsLnBhY2thZ2VzKFwiZHBseXJcIixkZXBlbmRlbmNpZXMgPSBUKVxubGlicmFyeShcImRwbHlyXCIpXG5cbmE8LWRhdCAlPiVcbiAgZ3JvdXBfYnkoYW5pbykgJT4lIFxuICBzdW1tYXJpc2UoY29uZmlybWFkb3M9c3VtKGNvbmZpcm1hZG9zLG5hLnJtID0gVCkscHJvYmFibGVzPXN1bShwcm9iYWJsZXMsIG5hLnJtID0gVCkpXG5hXG5cbiNwbG90KGRhdCRhZ2UsZGF0JFJlc3VsdF9vZl9UcmVhdG1lbnQpXG5cbmBgYCJ9 -->
-<pre class="r"><code>
-#Descargar
-install.packages(&quot;dplyr&quot;,dependencies = T)
-library(&quot;dplyr&quot;)
-
-a&lt;-dat %&gt;%
-  group_by(anio) %&gt;% 
-  summarise(confirmados=sum(confirmados,na.rm = T),probables=sum(probables, na.rm = T))
-a
-
-#plot(dat$age,dat$Result_of_Treatment)
-</code></pre>
-<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6MywibnJvdyI6MjF9LCJyZGYiOiJINHNJQUFBQUFBQUFBMTFUUFcvVFFCaCtFOXRONHpTbFVDSUJVeGJHWklpRU9vRjBjWXppNG8vZ3hGTExBazdpMEFqWGpod1hHRmxZR05uNEZkMlorQTlJL0FmRXpFakRjN0hQYVJMbHVidjMrOTduUGJ1OXM0NTZwaEpSbVNSWnByS0VvMXpHVWlLWnFuei9TQ1FkNHdDTFZNZmVXQnQ1d0ZvSE55SUYyQU1xd0Q3QUEzblNHbkFBOExoRDRBNXdCTndGN2dFODcvMHM1MWJSdlRCNEg0VEwzTHVSYS9lWnhWNDVOaHNLTDJacmJOZ3ZyT2RNODdTK2s4dFZqWjBpd05XWWNOZVlhVEpoVmpSdnFBbWgwdmVZN1JXaVpCUkJxbUVOSEhmRWVvNm9xcHg2dG1IblFzMWtUZFBvNnR4RFJKak02ckp6L2FXbjV4clpOS3ppRXFiajZpTlJxRzZ4bnFzM2UvZ2Jtd0lEdHJtWk1qQThWd1RMQTg4V0JuWEk3Q2JhR3hWMzJSdDVWbGNYV1NxZUJrSk1ZNGRaWlJMNlMwRnNRZmZNbjZSeGd0Tk5QcXdHN3hNeit3Mzh4THkrWmtPdXRPRDhHZnNMeUQ4d1Q0dW8vUXV6SElNMGg4aDhUZFM4aHUwZmxSNWVaRlVlUENicVBDVjY5bTJUbTF5Z2c2czl3ZjZjMXIvU0d5endyZkY0N3VzaDU1ZGNqd2VqOHNmME4zdDBqNjZ6R0VKN0I5K3poOFRibEZZN25hbFRQL1hiczhTL0RIYUppS0FUUkVoaUhyMWc0U2NwTEZFYUw4V01KM0UwbXllWC9yUlFWUmRKUFBiSElVK3dsYldheEIvYUlqTnZ0dndKeTJxMStwT1J1K1ZjaVJmcFBJN2dXajdPUDZMYmR5OGxPNHFqcTRpbm5yWW1GMWZSdTFibkpQL0tTamtaOWZ6Y3VIV1dzcHF5SUVZUkl3K2l0L01vRUdTRS9qZ0ljK0VRUGF4YmFDK1NlWlFLSnFGZHR0TTQ5WVdmT29sRG9jbGV6czEveUkxcFZFOEVBQUE9In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["Departamentos"],"name":[1],"type":["fctr"],"align":["left"]},{"label":["confirmados"],"name":[2],"type":["int"],"align":["right"]},{"label":["probables"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"AMAZONAS","2":"1354","3":"82"},{"1":"ANCASH","2":"3817","3":"50"},{"1":"AYACUCHO","2":"3795","3":"1077"},{"1":"CAJAMARCA","2":"4498","3":"70"},{"1":"CALLAO","2":"5","3":"0"},{"1":"CUSCO","2":"1837","3":"352"},{"1":"HUANUCO","2":"1669","3":"37"},{"1":"ICA","2":"1867","3":"2991"},{"1":"IMPORTADOS","2":"192","3":"153"},{"1":"JUNIN","2":"3917","3":"85"},{"1":"LA LIBERTAD","2":"11990","3":"906"},{"1":"LAMBAYEQUE","2":"4706","3":"352"},{"1":"LIMA","2":"847","3":"17"},{"1":"LORETO","2":"19551","3":"2571"},{"1":"MADRE DE DIOS","2":"8367","3":"245"},{"1":"PASCO","2":"253","3":"3"},{"1":"PIURA","2":"72040","3":"6831"},{"1":"PUNO","2":"16","3":"0"},{"1":"SAN MARTIN","2":"6181","3":"73"},{"1":"TUMBES","2":"12861","3":"3258"},{"1":"UCAYALI","2":"16025","3":"19"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[21]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CgojRGVzY2FyZ2FyCmluc3RhbGwucGFja2FnZXMoImRwbHlyIixkZXBlbmRlbmNpZXMgPSBUKQpsaWJyYXJ5KCJkcGx5ciIpCgphPC1kYXQgJT4lCiAgZ3JvdXBfYnkoYW5pbykgJT4lIAogIHN1bW1hcmlzZShjb25maXJtYWRvcz1zdW0oY29uZmlybWFkb3MsbmEucm0gPSBUKSxwcm9iYWJsZXM9c3VtKHByb2JhYmxlcywgbmEucm0gPSBUKSkKYQoKI3Bsb3QoZGF0JGFnZSxkYXQkUmVzdWx0X29mX1RyZWF0bWVudCkKCmBgYAo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CgojRGVzY2FyZ2FyCiNqdWFuIGVzdHV2byBhcXVpCmluc3RhbGwucGFja2FnZXMoImRwbHlyIixkZXBlbmRlbmNpZXMgPSBUKQpsaWJyYXJ5KCJkcGx5ciIpCgpkYXQ8LXJlYWQuY3N2KCJkYXRhLmNzdiIsZmlsZUVuY29kaW5nID0gInV0ZjgiKQpkYXRhX2Rlbmd1ZTwtcmVhZC5jc3YoIkRhdGFfZGVuZ3VlLmNzdiIsZmlsZUVuY29kaW5nID0gInV0ZjgiKQpkYXRhX2Rlbmd1ZQoKYTwtZGF0ICU+JQogIGdyb3VwX2J5KGFuaW8pICU+JSAKICBzdW1tYXJpc2UoY29uZmlybWFkb3M9c3VtKENhc29zLmNvbmZpcm1hZG9zLG5hLnJtID0gVCkscHJvYmFibGVzPXN1bShDYXNvcy5wcm9iYWJsZXMsbmEucm09VCkpCmEKCmI8LWRhdGFfZGVuZ3VlICU+JQogIGdyb3VwX2J5KERlcGFydGFtZW50b3MpICU+JQogIHN1bW1hcmlzZShjb25maXJtYWRvcz1zdW0oQ2Fzb3MuY29uZmlybWFkb3MsbmEucm0gPSBUKSxwcm9iYWJsZXM9c3VtKENhc29zLnByb2JhYmxlcyxuYS5ybSA9IFQpKQpiCgojcGxvdChkYXQkYWdlLGRhdCRSZXN1bHRfb2ZfVHJlYXRtZW50KQoKYGBgCg==</div>
 
 
 
