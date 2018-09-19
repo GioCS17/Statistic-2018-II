@@ -178,23 +178,21 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG4jRGVzY2FyZ2FyXG5pbnN0YWxsLnBhY2thZ2VzKFwiZHBseXJcIixkZXBlbmRlbmNpZXMgPSBUKVxubGlicmFyeShcImRwbHlyXCIpXG5cbmE8LWRhdCAlPiVcbiAgZ3JvdXBfYnkoYW5pbykgJT4lIFxuICBzdW1tYXJpc2UoY29uZmlybWFkb3M9c3VtKGNvbmZpcm1hZG9zLG5hLnJtID0gVCkscHJvYmFibGVzPXN1bShwcm9iYWJsZXMsIG5hLnJtID0gVCkpXG5hXG5cbiNwbG90KGRhdCRhZ2UsZGF0JFJlc3VsdF9vZl9UcmVhdG1lbnQpXG5cbmBgYCJ9 -->
-<pre class="r"><code>
-#Descargar
-install.packages(&quot;dplyr&quot;,dependencies = T)
-library(&quot;dplyr&quot;)
-
-a&lt;-dat %&gt;%
-  group_by(anio) %&gt;% 
-  summarise(confirmados=sum(confirmados,na.rm = T),probables=sum(probables, na.rm = T))
-a
-
-#plot(dat$age,dat$Result_of_Treatment)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG4jRGVzY2FyZ2FyXG5pbnN0YWxsLnBhY2thZ2VzKFxcZHBseXJcXCxkZXBlbmRlbmNpZXMgPSBUKVxubGlicmFyeShcXGRwbHlyXFwpXG5cbmE8LWRhdCAlPiVcbiAgZ3JvdXBfYnkoYW5pbykgJT4lIFxuICBzdW1tYXJpc2UoY29uZmlybWFkb3M9c3VtKGNvbmZpcm1hZG9zLG5hLnJtID0gVCkscHJvYmFibGVzPXN1bShwcm9iYWJsZXMsIG5hLnJtID0gVCkpXG5hXG5cbiNwbG90KGRhdCRhZ2UsZGF0JFJlc3VsdF9vZl9UcmVhdG1lbnQpXG5cbmBgYFxuYGBgIn0= -->
+<p><code>r</code>r</p>
+<div id="descargar" class="section level1">
+<h1>Descargar</h1>
+<p>install.packages(,dependencies = T) library()</p>
+<p>a&lt;-dat %&gt;% group_by(anio) %&gt;% summarise(confirmados=sum(confirmados,na.rm = T),probables=sum(probables, na.rm = T)) a</p>
+</div>
+<div id="plotdatagedatresult_of_treatment" class="section level1">
+<h1>plot(dat<span class="math inline">\(age,dat\)</span>Result_of_Treatment)</h1>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+</div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CgojRGVzY2FyZ2FyCmluc3RhbGwucGFja2FnZXMoImRwbHlyIixkZXBlbmRlbmNpZXMgPSBUKQpsaWJyYXJ5KCJkcGx5ciIpCgphPC1kYXQgJT4lCiAgZ3JvdXBfYnkoYW5pbykgJT4lIAogIHN1bW1hcmlzZShjb25maXJtYWRvcz1zdW0oY29uZmlybWFkb3MsbmEucm0gPSBUKSxwcm9iYWJsZXM9c3VtKHByb2JhYmxlcywgbmEucm0gPSBUKSkKYQoKI3Bsb3QoZGF0JGFnZSxkYXQkUmVzdWx0X29mX1RyZWF0bWVudCkKCmBgYAo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NCg0KI0Rlc2Nhcmdhcg0KI2JlbGVuIGVzdHV2byBhcXVpDQppbnN0YWxsLnBhY2thZ2VzKCJkcGx5ciIsZGVwZW5kZW5jaWVzID0gVCkNCmxpYnJhcnkoImRwbHlyIikNCg0KYTwtZGF0ICU+JQ0KICBncm91cF9ieShhbmlvKSAlPiUgDQogIHN1bW1hcmlzZShjb25maXJtYWRvcz1zdW0oY29uZmlybWFkb3MsbmEucm0gPSBUKSxwcm9iYWJsZXM9c3VtKHByb2JhYmxlcywgbmEucm0gPSBUKSkNCmENCg0KI3Bsb3QoZGF0JGFnZSxkYXQkUmVzdWx0X29mX1RyZWF0bWVudCkNCg0KYGBgDQo=</div>
 
 
 
